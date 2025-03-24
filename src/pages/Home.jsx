@@ -1,5 +1,6 @@
 //COMPONENT
 import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer"
 
 function Home() {
     return (
@@ -7,6 +8,7 @@ function Home() {
         <Header/>
             <h1>HOME</h1>
             <p>Subtitle</p>
+        <Footer/>
         </>
     )
 }
