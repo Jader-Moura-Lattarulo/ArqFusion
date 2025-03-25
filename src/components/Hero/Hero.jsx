@@ -9,7 +9,7 @@ function Hero() {
         <div className='hero d-flex al-center'>
             <div className='hero.text'>
                 <h1>Let Your Home Be Unique</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
                 <Link>
                     <Button buttonStyle="secondary" arrow>Get Started</Button>
                 </Link>
