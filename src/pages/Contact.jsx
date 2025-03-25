@@ -1,8 +1,16 @@
+import Header from "../components/Header/Header"
+import Banner from "../components/Banner/Banner"
+import Footer from "../components/Footer/Footer"
+
 function Contact() {
     return (
         <>
-            <h1>CONTACT</h1>
-            <p>Subtitle Contact</p>
+            <Header/>
+            <Banner image="contact.jpg" title="Contact Us"/>
+            <div className="container d-flex ">
+                
+            </div>
+            <Footer/>
         </>
     )
 }
