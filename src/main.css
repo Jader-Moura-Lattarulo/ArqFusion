@@ -19,7 +19,7 @@ a {
 }
 
 .primary-color {
-  background-color: #0C70F2;
+  color: #0C70F2;
 }
 
 .secondary-background {
@@ -27,7 +27,7 @@ a {
 }
 
 .secondary-color {
-  background-color: #1D1D1D;
+  color: #1D1D1D;
 }
 
 .tertiary-background {
@@ -35,7 +35,7 @@ a {
 }
 
 .tertiary-color {
-  background-color: #F6F6F6;
+  color: #F6F6F6;
 }
 
 .grey-1-color {
