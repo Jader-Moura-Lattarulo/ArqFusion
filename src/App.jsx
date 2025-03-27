@@ -7,6 +7,9 @@ import About from './pages/About'
 import Projects from './pages/Projects' 
 import Contact from './pages/Contact'
 
+//COMPONENTS
+import LoadingCube from './components/LoadingSpinner/LoadingCube'
+
 //UTILS
 import ScrollToTop from './utils/ScrollToTop'
 import { AppContext } from './contexts/AppContext'
@@ -16,7 +19,7 @@ function App() {
   const appContext = useContext(AppContext)
 
   if (appContext.loading) {
-    return 'Loading...'
+    return <LoadingCube/>
   }
 
   return (
