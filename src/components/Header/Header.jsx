@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 
 //ASSETS
-import Logo from '../../assets/dnc-logo.svg'
+import Logo from '../../assets/fusio-logo.png'
 
 //COMPONENTS
 import Button from "../Button/Button"
@@ -25,7 +25,7 @@ function Header () {
         <header>
             <div className="container">
                 <div className="align-center d-flex jc-space-between">
-                    <Link to="/"><img src={Logo} alt="logoDNC" /></Link>
+                    <Link to="/"><img src={Logo} alt="logo ArqFusion" className="logo" /></Link>
                     <div className="mobile-menu">
                         <Button buttonStyle="secondary" onClick={toggleMenu}>
                             Menu
