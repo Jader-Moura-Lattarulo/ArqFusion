@@ -59,13 +59,13 @@ function Footer () {
                     </div>
                 </div>
                 <div className="d-flex jc-space-between footer-copy">
-                    <p className="grey-1-color">Copyright © DNC - 2024</p>
+                    <p className="grey-1-color">Copyright © ArqFusion - 2024</p>
                     <div className="lang-area d-flex">
                         <Button buttonStyle="unstyled" onClick={() => changeLanguage('br')}>
-                            <img className="flag-height" src={BrazilIcon} alt="Brasil Icon"/>
+                            <img className="flag-size" src={BrazilIcon} alt="Brasil Icon"/>
                         </Button>
                         <Button buttonStyle="unstyled" onClick={() => changeLanguage('en')}>
-                            <img className="flag-height" src={UsaIcon} alt="USA Icon" />
+                            <img className="flag-size" src={UsaIcon} alt="USA Icon" />
                         </Button>
                     </div>
                 </div>
