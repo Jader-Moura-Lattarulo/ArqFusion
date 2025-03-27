@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 
 //ASSETS
-import Logo from '../../assets/dnc-logo.svg'
+import Logo from '../../assets/fusio-logo.png'
 import BrazilIcon from '../../assets/brazil-icon.svg'
 import UsaIcon from '../../assets/usa-icon.svg'
 import FacebookIcon from '../../assets/facebook-icon.svg'

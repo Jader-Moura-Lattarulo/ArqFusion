@@ -25,6 +25,11 @@ nav a:hover {
     color: #0C70F2;
 }
 
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
 .mobile-menu {
     display: none;
 }
