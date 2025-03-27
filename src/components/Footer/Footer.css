@@ -54,8 +54,9 @@ footer .social-links a {
     column-gap: 23px;
 }
 
-.flag-height {
-    height: 29px;
+.flag-size {
+    height: 32px;
+    width: 32px;
 }
 
 @media (max-width: 768px) {

@@ -69,7 +69,7 @@ function ProjectsList() {
                                 <h3>{project.title}</h3>
                                 <p>{project.subtitle}</p>
                                 <Button buttonStyle='unstyled' onClick={() => handleSavedProjects(project.id)} >
-                                    <img src={favProjects.includes(project.id) ? LikedFilled : LikeOutLine} height= "20px"/>
+                                    <img src={favProjects.includes(project.id) ? LikedFilled : LikeOutLine} height= "32px"/>
                                 </Button>
                             </div>
                         ))
