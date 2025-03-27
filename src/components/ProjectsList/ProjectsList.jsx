@@ -3,7 +3,10 @@ import './ProjectsList.css'
 
 //ASSETS
 import LikedFilled from '../../assets/like-filled.svg'
-import Like from '../../assets/like.svg'
+import LikeOutLine from '../../assets/like.svg'
+
+//COMPONENTS
+import Button from '../Button/Button'
 
 //SERVICES
 import { getApiData } from '../../services/apiServices'
@@ -13,7 +16,21 @@ import { AppContext } from '../../contexts/AppContext'
 
 function ProjectsList() {
     const [projects, setProjects] = useState([])
+    const [favProjects, setFavProjects] = useState([])
     const appContext = useContext(AppContext)
+
+    const handleSavedProjects = (id) => {
+        setFavProjects((prevFavProjects) => {
+            if (prevFavProjects.includes(id)) {
+                const filterArray = prevFavProjects.filter((projectId) => projectId != id)
+                sessionStorage.setItem('favProjects', JSON.stringify(filterArray))
+                return prevFavProjects.filter((projectId) => projectId != id)
+            } else {
+                sessionStorage.setItem('favProjects', JSON.stringify([...prevFavProjects, id]))
+                return[...prevFavProjects, id]
+            }
+        })
+    }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -25,6 +42,13 @@ function ProjectsList() {
             }
         }
         fetchData()
+    }, [])
+
+    useEffect(() => {
+        const savedFavProjects = JSON.parse(sessionStorage.getItem('favProjects'))
+        if (savedFavProjects) {
+            setFavProjects(savedFavProjects)
+        }
     }, [])
 
     return (
@@ -44,7 +68,9 @@ function ProjectsList() {
                                 ></div>
                                 <h3>{project.title}</h3>
                                 <p>{project.subtitle}</p>
-                                <img src={LikedFilled} height= "20px"/>
+                                <Button buttonStyle='unstyled' onClick={() => handleSavedProjects(project.id)} >
+                                    <img src={favProjects.includes(project.id) ? LikedFilled : LikeOutLine} height= "20px"/>
+                                </Button>
                             </div>
                         ))
                     :
