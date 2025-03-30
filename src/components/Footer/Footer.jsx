@@ -52,9 +52,9 @@ function Footer () {
                     <div className="d-flex">
                         <div className="footer-col">
                             <h3>{appContext.languages[appContext.language].general.contact}</h3>
-                            <p className="grey-1-color">R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP 12243-030</p>
-                            <p className="grey-1-color">suporte@escoladnc.com.br</p>
-                            <p className="grey-1-color">(19) 99187-4342</p>
+                            <p className="grey-1-color">R. Alameda Fusion, 120 – Centro | São Paulo – SP | CEP 01000-000</p>
+                            <p className="grey-1-color">contato@arqfusion.com</p>
+                            <p className="grey-1-color">(11) 98765-4321</p>
                         </div>
                     </div>
                 </div>
