@@ -1,12 +1,38 @@
-# React + Vite
+# ArqFusion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+ArqFusion é um projeto baseado em React e Vite, consumindo uma API própria para gestão de informações. O site possui suporte a múltiplos idiomas, permitindo a alternância entre português e inglês. 
 
-Currently, two official plugins are available:
+A interface foi projetada para ser intuitiva e responsiva, oferecendo uma experiência fluida em diferentes dispositivos, incluindo celulares e tablets. O sistema exibe informações detalhadas de arquivos, permite interações dinâmicas com os dados da API e consome um serviço externo para contato via e-mail.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+- React
+- Vite
+- Styled-Components
+- JavaScript/TypeScript
 
-## Expanding the ESLint configuration
+## Deploy
+O projeto está hospedado em: [ArqFusion - Vercel](https://arq-fusion-jmdev.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como Rodar o Projeto
+
+### 1. Clonar o Repositório
+```sh
+git clone https://github.com/Jader-Moura-Lattarulo/ArqFusion.git
+cd ArqFusion
+```
+
+### 2. Instalar Dependências
+```sh
+npm install
+```
+
+### 3. Rodar o Projeto
+```sh
+npm run dev
+```
+
+## Contato
+- GitHub: [Jader Moura Lattarulo](https://github.com/Jader-Moura-Lattarulo)
+- LinkedIn: [Jader Moura Lattarulo](https://www.linkedin.com/in/dev-jader/)
+
